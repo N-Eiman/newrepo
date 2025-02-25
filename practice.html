@@ -1,33 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beautiful Backgroundd</title>
     <style>
-        body {
-            background-image: url(https://images.pexels.com/photos/600114/pexels-photo-600114.jpeg?cs=srgb&dl=pexels-victorfreitas-600114.jpg&fm=jpg);
-            background-repeat: no-repeat;
-            background-color: #fff;
-        }
-        .container {
-            display: grid;
-            
-        }
+      body {
+        background-image: url(https://www.oppaca.com/hubfs/Imported_Blog_Media/158_cop2-1.jpg);
+        background-repeat: repeat;
+        background-color: #fff;
+      }
+      .heard {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 10px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        line-height: 40px;
+        color: rgba(241, 6, 6, 0.938);
+      }
+
+      .image {
+        width: 100%;
+        height: 300px;
+        border-radius: 15px;
+      }
+      .image:hover {
+        transform: translateX(60px) scale(0.5) rotate(75deg);
+      }
+      .container {
+        margin: 100px 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        grid-gap: 20px;
+      }
+      footer {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 10px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        line-height: 40px;
+        color: rgba(241, 6, 6, 0.7);
+        font-weight: bold;
+        font-size: 20px;
+      
+    }
+    a {
+        text-decoration: none;
+        color: red;
+
+        } 
+        
     </style>
-</head>
-<body>
-    <header>
-        <h1>Practice File</h1>
-    <h2>Inspired by my lessons at SheCodes</h2>
+  </head>
+  <body>
+    <header class="heard">
+      <h1>Practice File</h1>
+      <h2>Inspired by my lessons at SheCodes</h2>
     </header>
-    
+
     <main>
-        <div class="container">
-        <img src="https://cdn.pixabay.com/photo/2018/06/14/21/11/girl-3475649_1280.jpg" alt="woman standing" />
-        <img src="https://cdn.pixabay.com/photo/2019/10/14/15/53/women-4549266_640.jpg" alt="women looking at the beach" />
-        <img src="https://cdn.pixabay.com/photo/2018/04/10/18/57/fashion-3308387_640.jpg" alt="" />
-        </div>
-    </main>  
-</body>
+      <div class="container">
+        <img
+          src="https://media.istockphoto.com/id/487745566/photo/woman-sitting-on-sofa-with-colorful-shoes-and-bags-shopping.jpg?s=612x612&w=0&k=20&c=pPfwgUbKdFcyoSufzRjGptjPaDFMCPpyJ85hmR2NNXg="
+          alt="woman standing"
+          class="image"
+        />
+        <img
+          src="
+          https://thumbs.dreamstime.com/b/beautiful-sexy-girl-trendy-glowing-makeup-metallic-silver-lips-high-fashion-model-woman-colorful-bright-neon-lights-posing-135510784.jpg"
+          alt="beautiful curvacios women in a black elegant-lady-black-dress-wearing-pearl-jewelry-necklace-wide-brim-hat-fashion-woman-cocktail-form-fitted-gown-gloves-336345619"
+          class="image"
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2018/04/10/18/57/fashion-3308387_640.jpg"
+          class="image"
+          alt=""
+        />
+      </div>
+    </main>
+    <footer>
+      <p>Created by <a href="https://github.com/N-Eiman">N-Eiman</a></p>
+    </footer>
+  </body>
 </html>
