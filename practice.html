@@ -10,6 +10,13 @@
         background-repeat: repeat;
         background-color: #fff;
       }
+
+      .different-image {
+        background-image: url(https://cdn.prod.website-files.com/63a9fb94e473f36dbe99c1b1/672dc0c002d7d7214564e6b5_65bbd4f322bfa397d6096dab_JBvG8dAPR7yNGL1dB4QX.webp);
+        background-repeat: repeat;
+        background-color: #fff;
+      }
+
       .heard {
         background-color: rgba(255, 255, 255, 0.6);
         border-radius: 10px;
@@ -25,14 +32,26 @@
         height: 300px;
         border-radius: 15px;
       }
+
       .image:hover {
-        transform: translateX(60px) scale(0.5) rotate(75deg);
+        transform: translateX(40px) scale(0.5) rotate(320deg);
       }
       .container {
         margin: 100px 20px;
         display: grid;
         grid-template-columns: repeat(3, 400px);
         grid-gap: 20px;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 3px solid red;
+        background-color: rgb(255, 255, 255);
+        color: rgb(19, 18, 18);
+        padding: 20px 50px;
+        border-radius: 30px;
+        font-weight: 900;
       }
       footer {
         background-color: rgba(255, 255, 255, 0.6);
@@ -44,14 +63,11 @@
         color: rgba(241, 6, 6, 0.7);
         font-weight: bold;
         font-size: 20px;
-      
-    }
-    a {
+      }
+      a {
         text-decoration: none;
         color: red;
-
-        } 
-        
+      }
     </style>
   </head>
   <body>
@@ -79,9 +95,17 @@
           alt=""
         />
       </div>
+      <button>Change Theme</button>
     </main>
     <footer>
       <p>Created by <a href="https://github.com/N-Eiman">N-Eiman</a></p>
     </footer>
+    <script>
+      let button = document.querySelector("button");
+      button.addEventListener("click", () => {
+        let body = document.querySelector("body");
+        body.classList.add("different-image");
+      });
+    </script>
   </body>
 </html>
