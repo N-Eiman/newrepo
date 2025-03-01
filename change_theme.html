@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Theme</title>
+    <style>
+        .light {
+            background-color: #fff;
+        }
+        .dark {
+            background-color:#000; 
+        }
+        button {
+            padding: 20px 30px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+        }
+
+        
+
+    </style>
+</head>
+<body class="light">
+    <div>
+         <button>Dark Theme</button>
+    </div>
+   
+    <script>
+        let button = document.querySelector("button");
+
+        button.addEventListener("click", ()=>{
+            let theme = document.querySelector(".light");
+            theme.classList.add("dark");
+        })
+
+    </script>
+</body>
+</html>
